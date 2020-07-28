@@ -20,5 +20,10 @@ agent any
          echo 'Deployment stage'
 }
 }
+    stage('Preprod'){
+      steps{
+        echo 'we r in preprod stage'
          }
          }
+  }
+}
