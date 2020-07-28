@@ -1,9 +1,6 @@
 pipeline {
 agent any
-   triggers {
-      pollSCM('* * * * *') 
-   }
-stages{
+  stages{
    stage('Build'){
           steps {
              echo 'we r in building stage'
