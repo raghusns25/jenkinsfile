@@ -1,7 +1,7 @@
 pipeline {
 agent any
    triggers {
-      pollSCM('0 0/1 0 ? * * *') 
+      pollSCM('* * * * *') 
    }
 stages{
    stage('Build'){
@@ -15,5 +15,10 @@ stages{
             echo 'we r in testing stage'
     }
 }
+   stage('Deploy'{
+      steps{
+         echo 'Deployment stage'
 }
 }
+         }
+         }
